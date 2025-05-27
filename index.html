@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Convite de Almoço Tecnológico</title>
+  <style>
+    body {
+      background-color: #0f172a;
+      color: #f1f5f9;
+      font-family: 'Courier New', Courier, monospace;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .codebox {
+      background-color: #1e293b;
+      padding: 2rem;
+      border-radius: 12px;
+      width: 90%;
+      max-width: 600px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.5);
+    }
+    .codebox p {
+      white-space: pre-wrap;
+      word-wrap: break-word;
+      font-size: 1.1rem;
+      line-height: 1.6;
+    }
+    .button {
+      background-color: #3b82f6;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      border: none;
+      border-radius: 8px;
+      font-size: 1.2rem;
+      cursor: pointer;
+      margin-top: 1rem;
+      transition: background-color 0.3s;
+    }
+    .button:hover {
+      background-color: #2563eb;
+    }
+    #resposta {
+      margin-top: 1rem;
+      font-size: 1rem;
+      color: #22c55e;
+    }
+  </style>
+</head>
+<body>
+  <div class="codebox">
+    <p>
+      💌 Convite Especial 💌
+
+      Olá, minha amiga maravilhosa! 💜
+
+      Estou te convidando para um almoço super especial no restaurante <strong>Camarões</strong>! 🍤
+
+      📍 Local: Camarões, São Paulo
+      📅 Data: Quinta-feira, 29 de Maio
+      🕐 Horário: 13:00h
+      🌐 Instagram: <a href="https://www.instagram.com/camaroes.sp/" target="_blank">@camaroes.sp</a>
+
+      Sei que você não tem passado dias fáceis, mas saiba que estou aqui — de verdade. 
+      Mesmo que seja só por uma horinha, quero te ver, te ouvir e te dar aquele abraço apertado. 🤗💞
+
+      Amigas são pra isso: pra dividir não só risadas, mas também os silêncios e os momentos difíceis. ✨
+
+      Que tal aceitar esse convite tecnológico e cheio de carinho? 🤖💖
+    </p>
+    <button class="button" onclick="aceitarConvite()">Aceitar Convite</button>
+    <div id="resposta"></div>
+  </div>
+
+  <script>
+    function aceitarConvite() {
+      const resposta = document.getElementById('resposta');
+      resposta.textContent = "✅ Convite aceito! Te espero lá para saborear juntos! 🍤";
+    }
+  </script>
+</body>
+</html>
